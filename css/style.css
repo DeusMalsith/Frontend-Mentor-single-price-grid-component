@@ -1,7 +1,131 @@
+:root {
+  --color-cyan: hsl(179, 62%, 43%);
+  --color-bright-yellow: hsl(71, 73%, 54%);
+
+  --color-light-gray: hsl(204, 43%, 93%);
+  --color-gray-blue: hsl(218, 22%, 67%);
+
+  --ff-karla: "Karla", sans-serif;
+  font-size: 10px;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: var(--ff-karla);
+  font-weight: 400;
+  background-color: var(--color-light-gray);
+}
+
+h1 {
+  color: var(--color-cyan);
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+button {
+  background-color: var(--color-bright-yellow);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 700;
+  font-family: "Karla";
+  width: min(26.3rem, calc(100%));
+  height: 4.8rem;
+  margin-top: 2.3rem;
+  box-shadow: 0px 9px 20px 5px rgb(0 0 0 / 12%);
+}
+
+.container-1 {
+  background-color: white;
+}
+
+.container-1 p {
+  color: var(--color-gray-blue);
+  line-height: 2;
+  font-size: 1.38rem;
+}
+
+.container-2 {
+  background-color: var(--color-cyan);
+  color: white;
+}
+
+._29dollar {
+  display: inline-block;
+  opacity: 100%;
+  color: white;
+  font-weight: 600;
+  font-size: 3rem;
+  margin-top: 2rem;
+  margin-right: 1rem;
+  margin-bottom: 1.2rem;
+  vertical-align: -6px;
+}
+
+.container-3 {
+  background-color: var(--color-cyan);
+  opacity: 0.8;
+  color: white;
+}
+
+.container-3 h2 {
+  margin-bottom: 2rem;
+}
+
+.container-3 p {
+  font-size: 1.37rem;
+  line-height: 1.5;
+}
+
+.guarantee-header {
+  color: var(--color-bright-yellow);
+  font-size: 1.5rem;
+  margin: 2rem auto;
+}
+
+.slight-opacity {
+  opacity: 0.5;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 1023px) {
+  .main-container {
+    margin: 7.2rem 3.2rem;
+  }
+
+  .container-1 {
+    padding: 3.2rem 2.4rem 3.7rem;
+    min-height: 26.7rem;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+  }
+
+  .container-2 {
+    padding: 2.6rem 2.4rem 2.4rem;
+    min-height: 22.8rem;
+  }
+
+  .container-3 {
+    padding: 2.4rem 2.4rem 1rem;
+    min-height: 22.7rem;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
 }
