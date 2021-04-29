@@ -176,6 +176,7 @@ footer {
     left: 0;
     bottom: 0;
     z-index: -1;
+    border-radius: 6px;
   }
 
   .container-1 p {
@@ -199,6 +200,7 @@ footer {
     left: 0;
     bottom: 0;
     z-index: -1;
+    border-radius: 6px;
   }
 
   .container-3 {
@@ -217,6 +219,7 @@ footer {
     left: 0;
     bottom: 0;
     z-index: -1;
+    border-radius: 6px;
   }
 
   .guarantee-header {
