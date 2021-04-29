@@ -123,6 +123,7 @@ footer {
 @media screen and (max-width: 1023px) {
   .main-container {
     margin: 7.2rem 3.2rem;
+    max-width: 55rem;
   }
 
   .container-1 {
@@ -142,6 +143,12 @@ footer {
     min-height: 22.7rem;
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
+  }
+}
+
+@media screen and (min-width: 555px) and (max-width: 1023px) {
+  .main-container {
+    margin: 7.2rem auto;
   }
 }
 
