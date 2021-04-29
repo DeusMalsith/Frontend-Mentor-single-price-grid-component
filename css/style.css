@@ -1,5 +1,6 @@
 :root {
   --color-cyan: hsl(179, 62%, 43%);
+  --color-light-cyan: hsl(179, 47%, 52%);
   --color-bright-yellow: hsl(71, 73%, 54%);
   --color-bright-yellow-hover: hsl(71, 83%, 54%);
 
@@ -88,8 +89,7 @@ footer {
 }
 
 .container-3 {
-  background-color: var(--color-cyan);
-  opacity: 0.8;
+  background-color: var(--color-light-cyan);
   color: white;
 }
 
@@ -146,15 +146,79 @@ footer {
 }
 
 @media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 2.4rem;
+  }
+
   .main-container {
     display: grid;
     grid-template-columns: 31.75rem 31.75rem;
     grid-template-rows: 21.6rem 25.9rem;
-    margin: 16.3rem 40.3rem;
+    margin: 16.3rem auto;
     justify-content: center;
   }
 
   .container-1 {
     grid-column: span 2;
+    padding: 4.1rem;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    position: relative;
+    z-index: auto;
+  }
+
+  .container-1::before {
+    content: "";
+    box-shadow: 0px 9px 20px 5px rgb(0 0 0 / 12%);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+
+  .container-1 p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+  }
+
+  .container-2 {
+    position: relative;
+    z-index: auto;
+    padding: 4rem;
+  }
+
+  .container-2::before {
+    content: "";
+    box-shadow: 0px 9px 20px 5px rgb(0 0 0 / 12%);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+
+  .container-3 {
+    position: relative;
+    z-index: auto;
+    padding: 4rem;
+  }
+
+  .container-3::before {
+    content: "";
+    box-shadow: 0px 9px 20px 5px rgb(0 0 0 / 12%);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+
+  .guarantee-header {
+    font-size: 1.8rem;
+    margin: 2rem auto 1rem;
   }
 }
